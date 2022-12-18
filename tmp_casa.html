@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>IPO Reto 4 - Rgomezort</title>
+    <meta charset="UTF-8">
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="Storage/IPO_2.png" />
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/navbars/">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <LINK rel="StyleSheet" href="index.css" type="text/css" MEDIA=screen>
+    <link src="=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <script type="text/javascript" src="JavaScript/hide_header.js"></script>
+    <script type="text/javascript" src="JavaScript/notification_snack.js"></script>
+    <script type="text/javascript" src="JavaScript/myFunction1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/94d02c18e8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg autohide" style= "background:rgb(0, 160, 253)">
+      <div class="container">
+        <li class="nav-link">
+            <img src="Storage/IPO_2.png">
+            <a class="navbar-brand" href="./home.html" style="color:rgb(255, 255, 255)"> IPOHouse</a>
+        </li>
+          
+        <div class="navbar-collapse" style= "font-family: 'formular'"">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <ul class="navs navbar-nav me-lg-3 mb-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link"><i class='fas fa-heart'style='font-size:20px;color:red'></i> Mis favoritos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"><i class='fas fa-exclamation-triangle'style='font-size:20px;color:yellow'></i> Mis Alertas</a>
+            </li>
+          </ul>
+          <form method="get" action="./login.html">
+            <button href="./Index.html" class="btnlog third">
+              <i class='fas fa-user'style='font-size:20px; padding-right:5px;'></i>Iniciar sesión
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" style="background-color:rgba(184, 184, 184, 0.981); border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+      <nav class="nav justify-content-center" aria-label="Secondary navigation">
+
+            <form method="get" action="./tmp_casa_3.html" style=' margin-right:20%;'>
+              <button href="./Index.html" class="btnprev third" >
+                <i class='fas fa-arrow-left' style='font-size:20px; padding-right:5px;'></i> Previo 
+              </button>
+            </form>
+            
+            <div class="dropdown" style='margin-right:2%;'>
+              <button class="btnprev third dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-right:2%;">
+                <i class='fas fa-share-alt'style='font-size:20px; padding-right:5px;'></i> Compartir 
+              </button>
+              <ul class="dropdown-menu a">
+                <li><h6 class="dropdown-header">¿Donde lo quieres compartir?</h6></li>
+                <li><i class='fab fa-whatsapp'style=' margin-left:12px; font-size:20px;color:green'></i> Whatsapp</li>
+                <li><i class='fab fa-facebook-square' style=' margin-left:12px;font-size:20px;color:blue'></i> Facebook</li>
+                <li><i class='fab fa-google' style=' margin-left:12px;font-size:20px;color:black'></i> Google</li>
+                <li><i class='fas fa-phone'style=' margin-left:12px;font-size:20px;color:black'></i> Contactos</li>
+              </ul>
+            </div>
+
+            <button onclick="myFunction()" class="btnprev third" style='margin-right:2%;'">
+              <i class='fas fa-heart'style='font-size:20px;color:red;padding-right:5px;'></i> Añadir a favoritos 
+              <div id="snackbar">Has añadido esta vivienda a favoritos :)</div>
+            </button>
+
+            <button onclick="myFunction1()" class="btnprev third" style=' margin-right:20%;'>
+              <i class='fas fa-trash-alt'style='font-size:20px; padding-right:5px;'></i> Descartar 
+              <div id="snackbar1">Has descartado esta vivienda</div>
+            </button>
+
+            <form method="get" action="./tmp_casa_1.html">
+              <button href="./Index.html" class="btnprev third" style=' margin-right:2%;'>
+                Siguiente <i class='fas fa-arrow-right 'style='font-size:20px; padding-left:5px;'></i>
+              </button>
+            </form>
+      </nav>
+    </div>
+
+    <!-- BACKGROUND HEADER  -->
+    <div class="container" style="padding:1%">
+      <!-- Grid img-->
+      <!-- Gallery -->
+      <div class="row">
+        <div class="col-lg-6 mb-4 mb-lg-0" style="object-fit: cover; ">
+          <img
+            src="./Storage/house1/house1_5.png"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Foto_grande"
+          />
+        </div>
+        <div class="col-lg-3 col-md-0 mb-0 mb-lg-0">
+          <img
+            src="./Storage/house1/house1_1.png"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="min1"
+          />
+          <img
+            src="./Storage/house1/house1_2.png"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="min2"
+          />
+        </div>
+        <div class="col-lg-3 col-md-0 mb-0 mb-lg-0">
+
+          <img
+          src="./Storage/house1/house1_3.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="min3"
+          />
+      
+          <img
+          src="./Storage/house1/house1_4.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="min4"
+          />
+        </div>
+
+        <div class="container v3_1">
+            <div class=".v3_1_1" >
+              <h2 style="text-transform:none; font-size:46px; color:aliceblue"> 120.000€</h2>
+            </div>
+  
+            <div class=".v3_1_1" style="font-size:24px; color:aliceblue">
+              <i class="fa fa-fw fa-bath" ></i>Baños: 2.
+              <i class="fa fa-fw fa-bed"></i>Habitaciones: 4.
+              <i class="fas fa-border-style"></i> 120 ㎡.
+              <i class="fas fa-cubes"></i> Planta 2.
+            </div>
+            <div class=".v3_1_1" style="padding-top:2%;" >
+            </div>
+            <div class="row" style="padding-top:2%; padding-bottom:2%;" >
+              <div class="col-lg-6 mb-4 mb-lg-0" style="object-fit: cover; display:flex;text-align:justify; color:aliceblue">
+                <a>
+                  <h2 style="text-transform:none; font-size:20px; color:aliceblue"><u>Piso en Paseo Marítimo - Barcelona - La Purísima.</u></h2>
+
+                  Fantástico piso, con plaza de garaje opcional en la misma finca, no incluida en el precio, para larga duración muy cercano a la playa, en la zona de Cortadura. 4º con ascensor. Exterior y muy luminoso. Consta de 4 dormitorios y 2 baño, uno de ellos con bañera y otro con ducha, uno de los baños en suite. Armarios empotrados. Vivienda sin amueblar, excepto la cocina que queda totalmente amueblada y equipada con electrodomésticos. Ventanas nuevas de climalit. Suelos de mármol. Gas natural. No se admiten mascotas.
+                  Gastos de comunidad incluidos en el precio. Gastos de suministros (agua, luz y gas no incluidos en el precio). Se pide un mes de fianza y otro de garantía adicional. Honorarios de la agencia no incluidos, correspondientes a un mes de renta más IVA.
+                </a>
+              </div>
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <form style="background-color: rgb(168, 215, 253); padding: 3%;  border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+                  <!-- Name input -->
+                  <h2 style="text-transform:none; font-size:46px; color:aliceblue"> ¿Tienes dudas?</h2>
+
+                  <div class="form-outline mb-3">
+                    <input type="text" id="form4Example1" class="form-control" />
+                    <label class="form-label" for="form4Example1">Nombre y apellidos.</label>
+                  </div>
+                  <!-- Email input -->
+                  <div class="form-outline mb-3">
+                    <input type="email" id="form4Example2" class="form-control" />
+                    <label class="form-label" for="form4Example2">Cuenta de correo.</label>
+                  </div>
+                  <!-- Message input -->
+                  <div class="form-outline mb-3">
+                    <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                    <label class="form-label" for="form4Example3">Mensaje</label>
+                  </div>
+                
+                  <!-- Checkbox -->
+                  <div class="form-check d-flex justify-content-center mb-3">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+                    <label class="form-check-label" for="form4Example4">
+                      ¿Quieres que te reenviemos el mail?
+                    </label>
+                  </div>
+                  <!-- Submit button -->
+                  <button href="./Index.html" class="btnprev third">
+                    Enviar <i class='fa fa-send'style='font-size:20px; padding-left:5px;'></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+        </div>
+        <div class="container v3_1" style="margin-top: 10px;">
+          <div class=".v3_1_1" >
+            <h2 style="text-transform:none; font-family: Montserrat;font-size:46px; color:aliceblue"><u>Características</u></h2>
+          </div>
+
+          <div class="row" style="padding-top:2%; padding-bottom:2%;" >
+            <div class="col-lg-14 mb-4 mb-lg-0" style="font-family: Montserrat;display:flex;text-align:Center; color:aliceblue">
+            <div>
+              <i class="fas fa-house-user" style="padding-right:5px; font-size:25px" ></i> Tipo inmueble: Piso.
+            </div>
+            <div>
+              <i class="fas fa-calendar-alt" style="padding-right:5px; font-size:25px"></i>Antigüedad: 20 a 30 años.
+            </div>
+            <div>
+              <i class="fas fa-building" style="padding-right:5px; font-size:25px"></i> Planta: 2.
+            </div>
+            <div>
+              <i class="fas fa-parking" style="padding-right:5px; font-size:25px"></i> Parking: No.
+            </div>
+            <div>
+              <i class="fab fa-pagelines" style="padding-right:5px; font-size:25px"></i> C. Energía: 999kWh ㎡/año (G).
+            </div>
+            <div>
+              <i class="fas fa-cloud-rain" style="padding-right:5px; font-size:25px"></i> Emisiones: 999Kg CO2/año.
+            </div>
+            </div>          
+       </div>
+    </div>
+  </div>
+        <!-- Footer -->
+        <div class="container" >
+          <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="./Index.html" class="nav-link px-2 text-muted">Página principal</a></li>
+              <li class="nav-item"><a href="./catalogo_1.html" class="nav-link px-2 text-muted">Comprar</a></li>
+              <li class="nav-item"><a href="./catalogo_2.html" class="nav-link px-2 text-muted">Alquilar</a></li>
+              <li class="nav-item"><a href="./catalogo_3.html" class="nav-link px-2 text-muted">Compartir piso</a></li>
+              <li class="nav-item disabled"><a href="#" class="nav-link px-2 text-muted">Actualidad</a></li>
+              <li class="nav-item disabled"><a href="#" class="nav-link px-2 text-muted">Favoritos</a></li>
+              <li class="nav-item disabled"><a href="#" class="nav-link px-2 text-muted">Alertas</a></li>
+          </ul>
+          <p class="text-center text-muted">&copy; 2022,IPO Reto 4 - Rgomezort.</p>
+          </footer>
+      </div>
+  <script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();   
+    });
+  </script>
+  </body>
+</html>

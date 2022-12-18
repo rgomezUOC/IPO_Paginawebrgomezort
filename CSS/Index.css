@@ -1,0 +1,145 @@
+body {background-image: url('img/background_1.jpg');
+    font-family: sans-serif;                                         
+    margin: 0;}
+    
+  .imgSlides {display: none} img {vertical-align: middle;}
+  
+
+  
+   
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+@media (min-width: 576px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  }
+}
+h1, .h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2.5rem;
+  }
+}
+
+
+  
+  /**  VARIABLES DE TEXTO**/
+  .large-font {
+  font-size: 48px;
+  }
+  
+  .xlarge-font {
+  font-size: 72px
+  }
+  
+  div.a {
+  text-align: center;
+  font-size: 16px;
+  }
+  
+  div.b {
+  text-align: left;
+  font-size: 16px;
+  }
+  
+  div.c {
+  text-align: right;
+  font-size: 16px;
+  } 
+  
+  div.d {
+  text-align: justify;
+  font-size: 16px;
+  } 
+  
+  /** ###################################  **/
+  
+  /** CENTER PILLS OF NAVBAR **/
+
+  .center-pills {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar_active {
+    background: rgba(228, 97, 178, 0.623);
+    border-radius: 15px;
+    margin-bottom: 5px;
+  }
+  
+  /**  HEADER RECALCULATION **/
+  
+  header.masthead {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-top: calc(15rem + 57px);
+    padding-bottom: 20rem;
+    background: no-repeat center center;
+    background-color: #ffffff75;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+  header.masthead:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff75;
+    opacity: 0.5;
+  }
+
+  .font-Inside_header {
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+
+  
+  
+  
+  /** ###################################  **/
+  
+  /**  SECONDARY BAR **/
+
+  
+  /** ###################################  **/
+  
+  
+  

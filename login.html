@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es" class="h-100">
+    <head>
+        <meta charset="UTF-8">
+        <title>IPO Reto 4 - Rgomezort</title>
+        <link href="index.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="Storage/IPO_2.png"/>
+        <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> 
+        <meta name="viewport" content="width:device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minium-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+
+        <!-- Background -->
+        <div id="wrapper">
+            <div class="owl-carousel" id="slider-area">
+                <div style="background-image: url(Storage/home_1.JPG)"></div>
+                <div style="background-image: url(Storage/home_2.JPG)"></div>
+                <div style="background-image: url(Storage/home_3.JPG)"></div>
+                <div style="background-image: url(Storage/home_4.JPG)"></div>
+                <div style="background-image: url(Storage/home_5.JPG)"></div>
+                <div style="background-image: url(Storage/home_6.JPG)"></div>
+            </div>
+        </div>
+        <div class="slider-text" style= "font-family: 'Montserrat'">
+            <main class="form-signin w-100 m-auto">
+                <form method="get" action="./Index.html" style="background-color: rgb(168, 215, 253); padding: 3%;  border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+                  <img class="mb-4" src="./Storage/IPO_2.png">
+                  <h1 class="h3 mb-3 fw-normal">¡Bienvenido al club!</h1>
+              
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Cuenta de correo</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Contraseña</label>
+                  </div>
+              
+                  <div class="checkbox mb-3">
+                    <label>
+                      <input type="checkbox" value="remember-me"> Recordar contraseña.
+                    </label>
+                  </div>
+                  <button class="btnl second">Todavía no tengo cuenta :(</button>
+                  <button class="btnl second">¡Ya tengo cuenta!</button>
+                </form>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <div class="container" >
+            <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="./Index.html" class="nav-link px-2 text-muted">Página principal</a></li>
+                <li class="nav-item"><a href="./catalogo_1.html" class="nav-link px-2 text-muted">Comprar</a></li>
+                <li class="nav-item"><a href="./catalogo_2.html" class="nav-link px-2 text-muted">Alquilar</a></li>
+                <li class="nav-item"><a href="./catalogo_3.html" class="nav-link px-2 text-muted">Compartir piso</a></li>
+                <li class="nav-item disabled"><a href="#" class="nav-link px-2 text-muted">Actualidad</a></li>
+                <li class="nav-item disabled"><a href="#" class="nav-link px-2 text-muted">Favoritos</a></li>
+                <li class="nav-item disabled"><a href="#" class="nav-link px-2 text-muted">Alertas</a></li>
+            </ul>
+            <p class="text-center text-muted">&copy; 2022,IPO Reto 4 - Rgomezort.</p>
+            </footer>
+        </div>
+
+        <script>
+        $('#slider-area').owlCarousel({
+           loop: true,
+           autoplay: true,
+           responsive: {
+               0: {
+                   items: 1
+               },
+               600: {
+                   items: 1
+               },
+               1000: {
+                   items: 1
+               }
+           }
+        })        
+        </script>
+    </body>
+  </html>
